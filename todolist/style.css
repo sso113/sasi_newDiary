@@ -31,7 +31,7 @@ body{
 .list-head{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    gap: 10px;
+    gap: 20px;
 }
 .entered.list{
     padding: 10px;
@@ -43,7 +43,7 @@ body{
 .add-list{
     border: none;
     border-radius: 5px;
-    background-color:rgb(135, 70, 160);
+    background-color: rgb(135, 70, 160);
     outline: none;
     font-size: 16px;
     color: #fff;
