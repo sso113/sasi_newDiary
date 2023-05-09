@@ -5,7 +5,7 @@ let tasks = document.querySelector('.tasks');
 //add btn disabled
 
 input.addEventListener('keyup', () => {
-    if(input.value.trim() !== 0){
+    if(input.value.trim() != 0){
         addBtn.classList.add('active')
     } else {
         addBtn.classList.remove('active')
@@ -32,6 +32,16 @@ addBtn.addEventListener('click', () => {
     } else {
         alert('Please enter a task')
     }
+
+    })
+
+    // delete item from list
+
+    tasks.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fa-xmark')) {
+            e.target.parentElement.parentElement.remove();
+        }
+
 
     })
 
